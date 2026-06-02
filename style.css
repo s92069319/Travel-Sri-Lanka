@@ -1,0 +1,227 @@
+/* ================= GENERAL ================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-custom {
+  background-color: #101010;
+}
+
+.navbar-custom a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #77b2f5;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: url("ocean.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 55px;
+  font-style: italic;
+}
+
+.para1 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #eaeaea;
+}
+
+/* LOGIN */
+.login-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background-color: #c8e5f3;
+  color: #c7c6c6;
+}
+
+/* SEARCH */
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  border: none;
+  width: 250px;
+}
+
+/* ================= SL SECTION ================= */
+.sl-title {
+  font-weight: bold;
+}
+
+.sl-card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.sl-card:hover {
+  transform: translateY(-5px);
+}
+
+.sl-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ================= CONTACT ================= */
+/* ================= CONTACT SECTION MODERN UI ================= */
+
+.contact-section {
+  background: #f5f7fa;
+  padding: 70px 0;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.contact-card .form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* Button */
+.btn-contact {
+  background-color: #4da6ff;  /* light blue */
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-contact:hover {
+  background-color: #3399ff;
+}
+
+/* ================= FOOTER ================= */
+/* ================= SUPER FOOTER ================= */
+
+.super-footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding-bottom: 20px;
+}
+
+.super-footer h4,
+.super-footer h5 {
+  color: #ffffff;
+}
+
+.super-footer p {
+  color: #d1d1d1;
+}
+
+.super-footer a {
+  color: #d1d1d1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.super-footer a:hover {
+  color: #4da6ff;
+  padding-left: 5px;
+}
+
+/* social icons */
+.social-icons a {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #4da6ff;
+  transform: scale(1.2);
+}
+
+.super-footer hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* ================= QUERIES SECTION ================= */
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* ================= FAQ TITLE DESIGN ================= */
+
+.faq-title , .SL ,.contact{
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1b3c59;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* underline effect */
+.faq-title::after , .SL::after , .contact::after{
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4da6ff, #1b3c59);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
