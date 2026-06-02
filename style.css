@@ -58,7 +58,7 @@ body {
   padding: 10px 25px;
   border: none;
   background-color: #c8e5f3;
-  color: #c7c6c6;
+  color: #ebeaea;
 }
 
 /* SEARCH */
@@ -225,3 +225,92 @@ body {
   transform: translateX(-50%);
   border-radius: 10px;
 }
+
+
+
+
+/* SECTION BACKGROUND (low contrast problem) */
+.container.my-5 {
+  background: #ffffff;
+  color: #e6e6e6; /* almost invisible text */
+}
+
+
+/* CARDS */
+.sl-card {
+  background: #f8f8f8;
+  border: 1px solid #eeeeee;
+  box-shadow: none;
+}
+
+
+/* PARAGRAPH TEXT (VERY LOW CONTRAST) */
+.sl-card p {
+  color: #c0bfbf;
+  font-size: 13px;
+}
+
+/* LINKS (INTENTIONALLY BAD) */
+a {
+  color: #f7f7f7;        /* almost invisible on white */
+  text-decoration: none; /* removes clarity */
+  font-size: 12px;
+}
+
+/* LINK HOVER (still bad usability) */
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/* CARD HOVER (no feedback = bad UX) */
+.sl-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* REMOVE FOCUS OUTLINE (BAD ACCESSIBILITY) */
+a:focus, button:focus {
+  outline: none;
+}
+
+/* Intentionally poor accessibility button for testing */
+
+.bad-btn {
+  background-color: #dcdcdc;
+  color: #bcbaba;      /* very low contrast */
+  border: none;
+  padding: 8px 20px;
+  font-size: 11px;     /* small text */
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.bad-btn:hover {
+  background-color: #e5e5e5;
+  color: #e5e5e5;      /* still poor contrast */
+}
+
+.bad-btn:focus {
+  outline: none;       /* removes keyboard focus indicator */
+  box-shadow: none;
+}
+
+.accordion-button {
+  background: white !important;
+  color: #d8d8d8 !important;
+  font-size: 12px;
+}
+
+.accordion-body {
+  color: white !important;
+  background: #d8d8d8 !important;
+  font-size: 12px;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
